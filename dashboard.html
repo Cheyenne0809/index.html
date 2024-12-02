@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FileUp Dashboard</title>
+  <style type="text/css">
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e5f6ff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #ccf2ff;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #007399;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.content {
+  width: 60%;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.image-card {
+  background-color: #007399;
+}
+
+.document-card {
+  background-color: #007399;
+}
+
+.music-card {
+  background-color: #007399;
+}
+
+.folders {
+  display: flex;
+  gap: 10px;
+}
+.folders img{
+  height: 100px;
+  width: 100px;
+}
+
+.folder {
+  flex: 1;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.usage {
+  width: 20%;
+  padding: 20px;
+  background-color: #007399;
+
+}
+
+.progress-circle {
+  background-color: #ccf2ff;
+  text-align: center;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.usage-list {
+  list-style: none;
+  color: #333;
+  padding: 20px;
+
+}
+.di{
+  display: flex;
+  margin-left: -20px;
+}
+.di h2{
+  padding: 20px;
+  padding-top: 40px;
+}
+.ad{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.ad p{
+  font-size: 35px;
+}
+.ad a{
+  color: black;
+  font-size: 35px;
+}
+.f1{
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+}
+.f1 p{
+  margin-top: 10px;
+  font-size: 25px;
+}
+.f1 img{
+  background-color: #ccf2ff;
+  border-radius: 20px;
+
+}
+.f2 img{
+  width: 50px;
+  padding-top: 40px;
+}
+.f3{
+  display: flex;
+}
+.f3 p{
+  margin-top: 50px;
+  font-size: 25px;
+  padding-left: 40px;
+  
+}
+
+  	
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="di">
+      <a href="index.html"><img src="logoo.png" style="width: 120px"></a>
+      <h2>FileUp</h2>
+      </div>
+        <div class="f2">
+          <div class="f3">
+            <img src="Dashboard22.png">
+            <p style="color: black;">Dashboard</p>
+          </div>
+          <div class="f3">
+            <img src="send.png">
+            <p>Shared</p>
+          </div>
+          <div class="f3">
+            <img src="favorite.png">
+            <p>Favorites</p>
+          </div>
+          <div class="f3">
+            <img src="bin.png">
+            <p>Trash Bin</p>
+          </div>
+          <div class="f3">
+            <img src="peace.png">
+            <p>Help</p>
+          </div>
+          <div class="f3">
+            <img src="setting.png">
+            <p>Settings</p>
+          </div>
+          </div>
+      
+    </aside>
+
+    <main class="content">
+      <header>
+        <h1>My Cloud</h1>
+        <p>Hello Cheyenne, Welcome Back!</p>
+        <input type="text" placeholder="Search Task" class="search-bar">
+      </header>
+      <div class="ad">
+        <a href="#" >Active</a>
+        <p>Disable</p>
+      </div>
+
+      <section class="cards">
+        <div class="card image-card">
+          <img src="photo.png" style="width: 100px">
+          <p>All Image<br>550 Files</p>
+        </div>
+        <div class="card document-card">
+          <img src="fol22.png" style="width: 100px">
+          <p>All Document<br>450 Files</p>
+        </div>
+        <div class="card music-card">
+          <img src="musical-note.png" style="width: 100px">
+          <p>All Music<br>355 Files</p>
+        </div>
+      </section>
+      <h1>Folders</h1>
+
+      <br>
+
+      <section class="folders">
+        <div class="folder">
+          <img src="folder.png">
+          <p style="color: white;">My Files<br>2 GB</p> 
+        </div>
+        <div class="folder">
+          <img src="folder.png">
+          <p style="color: white;">Work<br>5 GB</p> 
+        </div>
+        <div class="folder">
+          <img src="folder.png">
+          <p style="color: white;">School<br>8 GB</p> 
+        </div>
+        <div class="folder">
+          <img src="folder.png">
+          <p style="color: white;">Pictures<br>10 GB</p>
+        </div>
+      </section>
+    </main>
+
+
+    <aside class="usage">
+      <img src="notification.png" style="width: 30px">
+        
+      <div class="progress-circle">
+        <p>31 GB Used<br>of 100 GB</p>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        
+      
+      </div>
+
+      <div class="usage-list">
+
+
+        <div class="f1">
+          <img src="photo.png" style="width: 50px">
+          <b><p>Image: 2 GB</p>
+        </div>
+        <div class="f1">
+          <img src="fol22.png" style="width: 50px">
+          <p>Documents: 5 GB</p>
+        </div>
+        <div class="f1">
+          <img src="musical-note.png" style="width: 50px">
+          <p>Music: 8 GB</p>
+        </div>
+        <div class="f1">
+          <img src="document.png" style="width: 50px">
+          <p>Video: 7 GB</p>
+        </div>
+        <div class="f1">
+          <img src="multimedia.png" style="width: 50px">
+          <p>Archive: 9 GB</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script>
+var xValues = ["Image", "Documents", "Music", "Video", "Archive"];
+var yValues = [2, 5, 8, 7, 9];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+    }
+  }
+});
+</script>
+</body>
+</html>
